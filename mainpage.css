@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Federant&family=Mozilla+Headline:wght@200..700&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Federant&family=Mozilla+Headline:wght@200..700&family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body{
+  margin:0px;
+  padding: 0px;
+
+}
+/* section1 of header is start from here */
+#section1{
+  width:100%;
+
+}
+.first-line{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(254, 249, 245);
+    box-shadow: 1px 1px 1px rgb(233, 232, 232);
+
+}
+.logo-img{
+  width: 15%;
+
+}
+.page-heading{
+  margin: 3% 20% 2% 0%;
+  text-align: center;
+  width: 40%;
+  letter-spacing: 1rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.7rem;
+  color:rgb(76, 35, 32);
+  
+
+}
+.logo-img img{
+  max-width: 100%;
+  height: 170px;
+  margin-top: -15%;
+
+}
+.data{
+  display:grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto;
+  column-gap: 2%;
+max-width: 100%;
+width: 25%;
+height: 40px;
+text-align: end;
+margin-top: 1%;
+margin-right: 2%;
+
+}
+#Search-bar{
+  height: 27px;
+  border-radius: 7px;
+  border: 0.2px solid rgb(188, 186, 186);
+  margin-top: 2%;
+
+}
+.search-btn{
+  height: 38px;
+  width: 70%;
+  background: none;
+ border-radius: 50%;
+ border: none;
+ 
+}
+.search-btn:hover{
+  background-color: rgb(253, 239, 224);;
+}
+.search-btn:active{
+  box-shadow: 1px 1px 1px rgb(220, 220, 220);
+}
+
+.search-btn img{
+  max-width: 100%;
+  width: 100%;
+  height: 30px;  
+}
+.tools{
+  font-size: 0.8rem;
+}
+.search{
+  position: relative;
+  top: 50%;
+}
+.tools a{
+text-decoration: none;
+color:black
+}
+.second-line{
+  height: 60px;
+  display: flex;
+  max-width: 100%;
+  box-shadow: 1px 1px 1px rgb(233, 232, 232);
+}
+.for-gender-btns{
+  text-align: center;
+  width: 80%;
+}
+.about{
+  margin-top: 1%;
+  margin:2%;
+   position: relative;
+  left:10%;
+  max-width: 100%;
+  width: 10%;
+background: none;
+border: none;
+font-size: 1.1rem;
+}
+.about:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.for-wishlist-cart-btn{
+  position: relative;
+  left:10%;
+  display: flex;
+  max-width: 20%;
+  margin-top: 1%;
+
+}
+
+.wishlist img{
+  max-width: 100%;
+  width: 100%;
+  height: 25px;
+}
+
+.cart img{
+  max-width: 100%;
+  height: auto;
+}
+.filling{
+
+ background: none;
+width: 20%;
+border: none;
+height: 50px;
+
+}
+.filling:hover{
+  border-radius: 50%;
+  background-color: rgb(253, 239, 224);
+  cursor: pointer;
+}
+.filling:active{
+  box-shadow: 1px 1px 1px  rgb(187, 187, 187);
+}
+
+/* section two with all the products in container here */
+#section2{
+max-width: 100%;
+margin: 4%;
+height: auto;
+ 
+}
+#section2 .container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+ column-gap: 20px;
+ padding: 20px;
+  
+}
+.shoe-card{
+ margin-top: 20%;
+  
+}
+.shoe-card:hover{
+  cursor: pointer;
+}
+.container{
+  margin: 0px;
+  padding: 0px;
+  
+}
+ .heading-for-shoe{
+  letter-spacing: 1.3rem;
+  font-family:"Titillium Web", sans-serif; 
+  color: rgb(38, 19, 16);
+  max-width: 100%;
+  font-size: 4rem;
+  margin: 0px;
+  margin-top: 5%;
+ }
+ .heading{
+   max-width: 100%;
+    text-align: center;
+ }
+
+.shoe-img img{
+  max-width: 100%;
+  width: 90%;
+  height: 250px;
+  
+}
+
+.shoe-name{
+ font-family: "Titillium Web", sans-serif;
+ font-weight: 700;
+ font-size: 1.2rem;
+ margin: 0px;
+ margin-top:2%;
+ padding: 0px;
+}
+
+ .brand-name{
+ margin: 1px;
+  padding: 0px;
+  color: grey;
+ }
+.gender{
+  margin: 1px;
+  padding: 0px;
+  color: rgb(62, 61, 61);
+  font-family: "Titillium Web", sans-serif;
+
+}
+.price-details{
+  margin: 1px;
+  margin-top: 3%;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 40% 20% ;
+
+}
+.current-price{
+  margin: 1px;
+  padding: 0px;
+  font-size: 1.2rem;
+
+}
+.price{
+  margin: 1px;
+  padding: 0px;
+  text-decoration:line-through ;
+  color: grey;
+
+}
+.discount{
+  margin: 1px;
+  padding: 0px;
+  color: rgb(12, 127, 21);
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+.in-container-wishlist-btn{
+  max-width: 100%;
+  height: auto;
+background: none;
+border: none;
+}
+.add_btns{
+  display: grid;
+  grid-template-columns: 70% 20%;
+  margin-top: 5%;
+
+}
+.in-container-cart-btn{
+  margin: 1%;
+  background-color: rgb(72, 142, 72);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  height: 35px;
+
+}
+.in-container-cart-btn:hover{
+  box-shadow: 2px 2px 2px rgb(176, 175, 175);
+}
+.in-container-wishlist-btn img{
+  max-width: 100%;
+  width: 90%;
+  height: 27px;
+  border-radius: 5px;
+}
+
+.in-container-wishlist-btn :hover{
+ box-shadow: 2px 2px 2px rgb(176, 175, 175);
+ background-color: rgba(255, 88, 88, 0.099);
+
+}
