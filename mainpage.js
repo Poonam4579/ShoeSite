@@ -7,6 +7,7 @@ shoes_data.forEach(shoe => {
    <div class="shoe-img">
       <img src="${shoe.shoeImage}" alt="shoe" loading="lazy">
     </div>
+    <div class="all-data-div">
   <p class="shoe-name">${shoe.name}</p>
   <p class="brand-name">${shoe.brandName}</p>
   <p class="gender">${shoe.gender}</p>
@@ -21,5 +22,6 @@ shoes_data.forEach(shoe => {
 <img src="shoe_images/360_F_1562810911_m1Dv0d3PKkiMlCGLWakKLkfVnqhhRuOk-removebg-preview.png" alt="heart">
  </button>
  </span>
+ </div>
 </div>`
 });

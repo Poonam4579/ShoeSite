@@ -4,30 +4,33 @@
 body{
   margin:0px;
   padding: 0px;
+  overflow-x: hidden;
 
 }
 /* section1 of header is start from here */
 #section1{
-  width:100%;
+  max-width:100%;
 
 }
 .first-line{
-  width: 100%;
+  max-width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
   background-color:rgb(254, 249, 245);
-    box-shadow: 1px 1px 1px rgb(233, 232, 232);
+  box-shadow: 1px 1px 1px rgb(233, 232, 232);
 
 }
 .logo-img{
+  max-width: 100%;
   width: 15%;
-
+  height: auto;
 }
 .page-heading{
-  margin: 3% 20% 2% 0%;
+  margin-top: 3%;
+  margin-bottom: 1%;
   text-align: center;
-  width: 40%;
+  width: 60%;
   letter-spacing: 1rem;
   font-family: "Orbitron", sans-serif;
   font-size: 1.7rem;
@@ -36,10 +39,11 @@ body{
 
 }
 .logo-img img{
+  height: 150px;
+  margin-top: -9%;
+  /* margin: 0px; */
   max-width: 100%;
-  height: 170px;
-  margin-top: -15%;
-
+  object-fit: contain;
 }
 .data{
   display:grid;
@@ -101,6 +105,7 @@ color:black
 .for-gender-btns{
   text-align: center;
   width: 80%;
+  max-width: 100%;
 }
 .about{
   margin-top: 1%;
@@ -119,18 +124,18 @@ font-size: 1.1rem;
 }
 
 .for-wishlist-cart-btn{
-  position: relative;
-  left:10%;
   display: flex;
-  max-width: 20%;
+  flex-direction: row;
+  max-width: 100%;
   margin-top: 1%;
+  justify-content: end;
 
 }
 
 .wishlist img{
   max-width: 100%;
   width: 100%;
-  height: 25px;
+  height: 30px;
 }
 
 .cart img{
@@ -138,11 +143,11 @@ font-size: 1.1rem;
   height: auto;
 }
 .filling{
-
+max-width: 100%;
  background: none;
 width: 20%;
 border: none;
-height: 50px;
+margin-right: 5%;
 
 }
 .filling:hover{
@@ -157,20 +162,22 @@ height: 50px;
 /* section two with all the products in container here */
 #section2{
 max-width: 100%;
-margin: 4%;
+margin: 0 auto;
 height: auto;
+padding: 2%;
  
 }
 #section2 .container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- column-gap: 20px;
- padding: 20px;
+   /* FOR AUTO ADJUSTMENT  */
+  /* Grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));  */
+ column-gap: 30px;
+ padding: 0px;
   
 }
 .shoe-card{
- margin-top: 20%;
-  
+ margin-top: 20px;  
 }
 .shoe-card:hover{
   cursor: pointer;
@@ -182,23 +189,28 @@ height: auto;
 }
  .heading-for-shoe{
   letter-spacing: 1.3rem;
-  font-family:"Titillium Web", sans-serif; 
   color: rgb(38, 19, 16);
   max-width: 100%;
-  font-size: 4rem;
-  margin: 0px;
+  font-size: 3.2rem;
+  padding: 2%;
   margin-top: 5%;
+  font-family: "Orbitron", sans-serif;
+  
  }
  .heading{
    max-width: 100%;
     text-align: center;
  }
-
+.shoe-img{
+  text-align: center;
+}
 .shoe-img img{
   max-width: 100%;
-  width: 90%;
-  height: 250px;
+  height: 270px;
   
+}
+.all-data-div{
+  margin-left: 5%;
 }
 
 .shoe-name{
@@ -289,4 +301,129 @@ border: none;
  box-shadow: 2px 2px 2px rgb(176, 175, 175);
  background-color: rgba(255, 88, 88, 0.099);
 
+}
+#section3{
+  height: 450px;
+  max-width: 100%;
+  display: flex;
+   flex-direction: row;
+   margin-top: 5%;
+   background-color:rgb(254, 249, 245); 
+
+}
+#section3 a{
+  text-decoration: none;
+  color: rgb(82, 82, 81);
+   font-family: "Titillium Web", sans-serif;
+   
+}
+.resources{
+  margin: 5%;
+}
+.help{
+  margin: 5%;
+
+}
+.company{
+  margin: 5%;
+
+}
+.other-footer-link{
+  margin: 5%;
+
+}
+.humbarger{
+  display: none;
+}
+
+
+/* ADD RESPONSIVENESS */
+@media(max-width: 480px){
+
+.logo-img{
+   height: 130px;
+   width: 25%;
+}
+.logo-img img{
+  height: 130px;
+}
+.page-heading {
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  position: relative;
+  top: 20%;
+  height: 50px;
+  max-width: 100%;
+  text-align: left;
+}
+.data{
+  display: none;
+}
+.for-gender-btns{
+  display: none;
+}
+.for-wishlist-cart-btn{
+   max-width:100%;
+}
+.filling{
+  margin: 0px;
+  width: 17%;
+  height: 50px;
+}
+
+.heading-for-shoe{
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  margin: 0px;
+  text-align: center;
+  max-width: 100%;
+  height: 50px;
+  margin-top: 10%;
+}
+.second-line{
+  max-width: 100%;
+  display: block;
+  flex:none;
+  height: 40px;
+}
+.first-line{
+  max-width: 100%;
+}
+#section1{
+  max-width: 100%;
+}
+#section2 .container{
+  max-width: 100%;
+  column-gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+}
+.cart img{
+  height: 45px;
+}
+.shoe-img img{
+  height: 250px;
+}
+ #section3{
+  margin-top: 15%;
+ }
+ .shoe-card{
+  margin-top: 30%;
+ }
+ .h-line{
+width: 30px;
+height: 2px;
+background-color: rgb(71, 45, 45);
+margin: 6px 0;
+
+}
+.humbarger{
+  max-width: 100%;
+padding-top: 7%;
+display: block;
+}
+.humburger-btn{
+  background: none;
+  max-width: 100%;
+  border: none;
+}
 }
