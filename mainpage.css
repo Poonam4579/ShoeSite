@@ -49,6 +49,7 @@ body{
   max-width: 100%;
   object-fit: contain;
 }
+
 .data{
   display:grid;
   grid-template-columns: auto auto auto ;
@@ -310,6 +311,9 @@ border: none;
   box-shadow: none;
   background-color: rgb(72, 142, 72);
 }
+.shoe{
+  position: relative;
+}
 .in-container-wishlist-btn{
  max-width: 100%;
  margin: 5px;
@@ -320,13 +324,36 @@ border: none;
   background-size: cover;  
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer; 
+  cursor: pointer;
+  /* position: relative;  */
   
 }
-.in-container-wishlist-btn:hover{
+/* .in-container-wishlist-btn:hover{
  box-shadow: 2px 2px 2px rgb(176, 175, 175);
 
+} */
+.in-container-red-heart-btn{
+   max-width: 100%;
+ /* margin: 5px; */
+ /* margin-top: 3px; */
+  width: 40px;           
+  height: 30px;
+  border-radius: 5px; 
+  background-image: url('shoe_images/istockphoto-1903985199-612x612.jpg');
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer; 
+  position: absolute;
+  left: 2px;
+  top: 10%;
+  border:none;
+  display: none;
 }
+/* .in-container-red-heart-btn.red-btn{
+  display: block;
+} */
+
 
 #section3{
   height: 450px;
@@ -379,9 +406,14 @@ flex-direction: column;
   font-size: 0.9rem;
   border-radius: 50%;
   z-index: 1000;
+  font-weight: 600;
   background-color:rgb(244, 62, 62);
   color:white;
 margin: 0px;
+text-align: center;
+padding-top: 4px;
+display: none;
+/* padding-right:1px; */
 }
 
 
