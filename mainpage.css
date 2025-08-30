@@ -117,6 +117,10 @@ color:black
   width: 80%;
   max-width: 100%;
 }
+.for-gender-btns a{
+  text-decoration: none;
+  color: black;
+}
 .about{
   margin-top: 1%;
   margin:2%;
@@ -174,19 +178,20 @@ border: none;
 }
 
 /* section two with all the products in container here */
-#section2{
+#section2 #men-section{
 max-width: 100%;
 margin: 0 auto;
 height: auto;
 padding: 2%;
  
 }
-#section2 .container{
+#section2 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
    /* FOR AUTO ADJUSTMENT  */
   /* Grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));  */
- column-gap: 30px;
+ column-gap: 20px;
+ row-gap: 60px;
  padding: 0px;
   
 }
@@ -196,7 +201,7 @@ padding: 2%;
 .shoe-card:hover{
   cursor: pointer;
 }
-.container{
+.container .men-container{
   margin: 0px;
   padding: 0px;
   
@@ -211,6 +216,16 @@ padding: 2%;
   font-family: "Orbitron", sans-serif;
   
  }
+ .heading-for-shoe-dis{
+  letter-spacing: 1.1rem;
+  color: rgb(69, 133, 74);
+  max-width: 100%;
+  font-size: 2.7rem;
+  padding: 2%;
+  margin-top: 17%;
+  font-family: "Orbitron", sans-serif;
+
+ }
  .heading{
    max-width: 100%;
     text-align: center;
@@ -222,6 +237,7 @@ padding: 2%;
 .shoe-img img{
   max-width: 100%;
   height: 270px;
+  width: 90%;
   
 }
 .all-data-div{
@@ -464,19 +480,21 @@ display: none;
   max-width: 100%;
   display: block;
   flex:none;
-  height: 50px;
+  height: 60px;
 }
 .first-line{
   max-width: 100%;
 }
-#section1{
+#section1  {
   max-width: 100%;
 }
-#section2 .container{
+#section2 .container {
   max-width: 100%;
   column-gap: 20px;
    grid-template-columns: repeat(2, 1fr);
+   row-gap: 10px;
 }
+
 .cart img{
   height: 45px;
 }
@@ -540,9 +558,12 @@ padding-top: 20%;
 background: none;
 border: none;
 font-size: 1.2rem;
-color:rgb(77, 50, 50);
 font-weight: 700;
 
+}
+.about2 a{
+  text-decoration: none;
+  color:rgb(77, 50, 50);
 }
 .about2:hover{
   text-decoration: underline;
@@ -589,7 +610,10 @@ font-weight: 400;
 }
 .wishlist{
   width: 15%;
-
+  height:70px;
+}
+.wishlist img{
+  height: 35px;
 }
 
 }

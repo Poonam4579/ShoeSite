@@ -1,19 +1,20 @@
-
+let total_count = [];
 on_load();
 
 function on_load() {
-  container_of_shoe_function();
+ container_of_shoe_function(shoes_data);
   heart_function();
   hamburger_function_load();
   cart_trolly();
   
 };
 
-function container_of_shoe_function() {
+
+function container_of_shoe_function(shoe_products) {
   let for_container = document.querySelector('#section2 .container');
 
   //NUMBER OF SHOE ADDED WITH FOR EACH AND ADDED IN INNER HTML 
-  shoes_data.forEach(shoe => {
+  shoe_products.forEach(shoe => {
     for_container.innerHTML += `
   <div class="shoe-card">
    <div class="shoe-img">
@@ -41,6 +42,7 @@ function container_of_shoe_function() {
 </div>`
   });
 };
+ 
 
 
 //HEART BUTTON
@@ -79,9 +81,6 @@ function hamburger_function_load() {
     for_side_page.classList.remove("show");
   });
 };
-
-
-let total_count = [];
 
 
 //ADD IN LOCAL STORAGE

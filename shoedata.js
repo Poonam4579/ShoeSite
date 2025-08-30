@@ -8,58 +8,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '10%',
     cur_price: '2.295.00',
-  },
-  {
-    id: '2',
-   shoeImage: 'shoe_images/7_823bce61-02ed-4032-8d10-5ea93ea2fff2.webp',
-    name: 'AIr Jordan MVP 92',
-    brandName: 'Ioryospor 3#otsonter',
-    gender: 'For Men',
-    actual_price: ' 2.195.00',
-    discount: '0%',
-    cur_price: '2.195.00',
-  
-  },
-  {
-    id: '3',
-     shoeImage: 'shoe_images/download (1).jpg',
-    name: 'Air max plus',
-    brandName: 'casual tysonter',
-    gender: "Men's shoe",
-    actual_price: ' 1.295.00',
-    discount: '5%',
-    cur_price: '9.95.00',
-  },
-  {
-    id: '4',
-    shoeImage: 'shoe_images/images.jpg',
-    name: 'Treaser *7 NOLA',
-    brandName: 'Koryospor GYM Special ',
-    gender: "Men's shoe",
-    actual_price: ' 4.195.00',
-    discount: '2%',
-    cur_price: '4.005.00',
-  },
-  {
-    id: '5',
-    shoeImage: 'shoe_images/images (57).jpg',
-    name: 'JordanKIDs  NOLA',
-    brandName: 'ryospor style tysonter',
-    gender: 'Kids',
-    actual_price: ' 2.895.00',
-    discount: '15%',
-    cur_price: '1.975.00',
-  },
-  {
-
-    id: '6',
-    shoeImage: 'shoe_images/images (38).jpg',
-    name: 'Women casula airOLA',
-    brandName: 'tyerslon regonter',
-    gender: "women's shoe",
-    actual_price: ' 5.195.00',
-    discount: '10%',
-    cur_price: '4.205.00',
+    category: 'men',
   },
   {
     id: '7',
@@ -70,61 +19,7 @@ const shoes_data = [
     actual_price: ' 7.105.00',
     discount: '12%',
     cur_price: '6.095.00',
-
-  },
-  {
-    id: '8',
-    shoeImage: 'shoe_images/images (29).jpg',
-    name: 'Air plus& NOLA',
-    brandName: 'Gym EX03 tysonter',
-    gender: "women's shoe",
-    actual_price: ' 4.195.00',
-    discount: '5%',
-    cur_price: '3.899.00',
-
-  },
-  {
-    id: '9',
-    shoeImage: 'shoe_images/images (26).jpg',
-    name: 'Jordan NOLA',
-    brandName: 'Koryospor tysonter',
-    gender: 'For Men',
-    actual_price: ' 3.195.00',
-    discount: '10%',
-    cur_price: '2.295.00',
-
-  },
-  {
-    id: '10',
-    shoeImage: 'shoe_images/download (1).jpg',
-    name: 'Easy XX teyr',
-    brandName: 'rusnter EX tysonter',
-    gender: "women's shoe",
-    actual_price: ' 1.995.00',
-    discount: '0%',
-    cur_price: '1.995.00',
-
-  },
-  {
-    id: '11',
-    shoeImage: 'shoe_images/download (2).jpg',
-    name: 'Jordan XXX',
-    brandName: 'Koryospor tysonter',
-    gender: 'For Men',
-    actual_price: ' 4.195.00',
-    discount: '40%',
-    cur_price: '2.295.00',
-
-  },
-  {
-    id: '12',
-    shoeImage: 'shoe_images/download (3).jpg',
-    name: 'Brown Yonk',
-    brandName: 'CasualSYtele tysonter',
-    gender: "men's shoe",
-    actual_price: ' 4.995.00',
-    discount: '15%',
-    cur_price: '3.295.00',
+     category: 'kids',
 
   },
   {
@@ -136,8 +31,129 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '5%',
     cur_price: '1.995.00',
+     category: 'women',
 
   },
+  {
+    id: '2',
+   shoeImage: 'shoe_images/7_823bce61-02ed-4032-8d10-5ea93ea2fff2.webp',
+    name: 'AIr Jordan MVP 92',
+    brandName: 'Ioryospor 3#otsonter',
+    gender: 'For Men',
+    actual_price: ' 2.195.00',
+    discount: '0%',
+    cur_price: '2.195.00',
+     category: 'men',
+  
+  },
+  
+  {
+    id: '3',
+     shoeImage: 'shoe_images/download (1).jpg',
+    name: 'Air max plus',
+    brandName: 'casual tysonter',
+    gender: "Men's shoe",
+    actual_price: ' 1.295.00',
+    discount: '5%',
+    cur_price: '9.95.00',
+     category: 'men',
+  },
+  {
+    id: '4',
+    shoeImage: 'shoe_images/images.jpg',
+    name: 'Treaser *7 NOLA',
+    brandName: 'Koryospor GYM Special ',
+    gender: "Men's shoe",
+    actual_price: ' 4.195.00',
+    discount: '2%',
+    cur_price: '4.005.00',
+     category: 'men',
+  },
+  {
+    id: '5',
+    shoeImage: 'shoe_images/images (57).jpg',
+    name: 'JordanKIDs  NOLA',
+    brandName: 'ryospor style tysonter',
+    gender: 'Kids',
+    actual_price: ' 2.895.00',
+    discount: '15%',
+    cur_price: '1.975.00',
+     category: 'kids',
+  },
+  {
+
+    id: '6',
+    shoeImage: 'shoe_images/images (38).jpg',
+    name: 'Women casula airOLA',
+    brandName: 'tyerslon regonter',
+    gender: "women's shoe",
+    actual_price: ' 5.195.00',
+    discount: '10%',
+    cur_price: '4.205.00',
+     category: 'women',
+  },
+  
+  {
+    id: '8',
+    shoeImage: 'shoe_images/images (29).jpg',
+    name: 'Air plus& NOLA',
+    brandName: 'Gym EX03 tysonter',
+    gender: "women's shoe",
+    actual_price: ' 4.195.00',
+    discount: '5%',
+    cur_price: '3.899.00',
+    category: 'women',
+
+  },
+  {
+    id: '9',
+    shoeImage: 'shoe_images/images (26).jpg',
+    name: 'Jordan NOLA',
+    brandName: 'Koryospor tysonter',
+    gender: 'For Men',
+    actual_price: ' 3.195.00',
+    discount: '10%',
+    cur_price: '2.295.00',
+     category: 'men',
+
+  },
+  {
+    id: '10',
+    shoeImage: 'shoe_images/download (1).jpg',
+    name: 'Easy XX teyr',
+    brandName: 'rusnter EX tysonter',
+    gender: "women's shoe",
+    actual_price: ' 1.995.00',
+    discount: '0%',
+    cur_price: '1.995.00',
+     category: 'men',
+
+  },
+  {
+    id: '11',
+    shoeImage: 'shoe_images/download (2).jpg',
+    name: 'Jordan XXX',
+    brandName: 'Koryospor tysonter',
+    gender: 'For Men',
+    actual_price: ' 4.195.00',
+    discount: '40%',
+    cur_price: '2.295.00',
+     category: 'men',
+
+  },
+  {
+    id: '12',
+    shoeImage: 'shoe_images/download (3).jpg',
+    name: 'Brown Yonk',
+    brandName: 'CasualSYtele tysonter',
+    gender: "men's shoe",
+    actual_price: ' 4.995.00',
+    discount: '15%',
+    cur_price: '3.295.00',
+     category: 'men',
+
+  },
+  
   {
     id: '14',
     shoeImage: 'shoe_images/images (22).jpg',
@@ -147,6 +163,7 @@ const shoes_data = [
     actual_price: ' 6.195.00',
     discount: '20%',
     cur_price: '5.295.00',
+     category: 'women',
 
   },
   {
@@ -158,6 +175,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '10%',
     cur_price: '2.295.00',
+     category: 'men',
 
   },
   {
@@ -169,6 +187,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '10%',
     cur_price: '2.295.00',
+     category: 'women',
 
   },
   {
@@ -180,6 +199,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '0%',
     cur_price: '2.195.00',
+     category: 'kids',
 
   },
   {
@@ -191,6 +211,8 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '30%',
     cur_price: '2.995.00',
+    category: 'kids',
+     
   },
   {
     id: '19',
@@ -201,6 +223,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '10%',
     cur_price: '3.995.00',
+     category: 'women',
   },
   {
     id: '20',
@@ -211,6 +234,7 @@ const shoes_data = [
     actual_price: ' 7.195.00',
     discount: '25%',
     cur_price: '6.005.00',
+     category: 'men',
   },
   {
     id: '21',
@@ -221,6 +245,7 @@ const shoes_data = [
     actual_price: ' 5.995.00',
     discount: '5%',
     cur_price: '5.115.00',
+     category: 'men',
   },
   {
     id: '22',
@@ -231,6 +256,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '0%',
     cur_price: '3.195.00',
+     category: 'men',
   },
   {
     id: '23',
@@ -241,6 +267,7 @@ const shoes_data = [
     actual_price: ' 9.195.00',
     discount: '30%',
     cur_price: '8.095.00',
+     category: 'men',
   },
   {
     id: '24',
@@ -251,8 +278,10 @@ const shoes_data = [
     actual_price: ' 6.999.00',
     discount: '15%',
     cur_price: '5.908.00',
+     category: 'men',
   },
-  { id:'25' ,
+  {
+    id: '25',
      shoeImage: 'shoe_images/images (20).jpg',
     name: 'Jordan NOLA',
     brandName: 'Koryospor tysonter',
@@ -260,6 +289,7 @@ const shoes_data = [
     actual_price: ' 6.195.00',
     discount: '12%',
     cur_price: '5.295.00',
+     category: 'men',
   },
   {
      id:'26' ,
@@ -270,6 +300,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '10%',
     cur_price: '2.003.00',
+     category: 'women',
   },
   {
     id:'27' ,
@@ -280,6 +311,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '5%',
     cur_price: '2.695.00',
+     category: 'women',
   },
   {
      id:'28' ,
@@ -290,6 +322,7 @@ const shoes_data = [
     actual_price: ' 6.195.00',
     discount: '20%',
     cur_price: '5.010.00',
+     category: 'women',
   },
   {
      id:'29' ,
@@ -300,6 +333,8 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '15%',
     cur_price: '1.995.00',
+    category: 'women',
+
   },
   {
      id:'30' ,
@@ -310,6 +345,7 @@ const shoes_data = [
     actual_price: ' 7.195.00',
     discount: '30%',
     cur_price: '5.295.00',
+    category: 'men',
   },
   {
      id:'31' ,
@@ -320,6 +356,8 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '10%',
     cur_price: '2.295.00',
+     category: 'kids',
+
   },
   {
      id:'32' ,
@@ -330,6 +368,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '5%',
     cur_price: '3.995.00',
+     category: 'kids',
   },
   {
      id:'33' ,
@@ -340,6 +379,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '15%',
     cur_price: '1.785.00',
+     category: 'kids',
   },
   {
      id:'34' ,
@@ -350,6 +390,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '15%',
     cur_price: '2.995.00',
+    category: 'kids',
   },
   {
       id:'35' ,
@@ -360,6 +401,7 @@ const shoes_data = [
     actual_price: ' 8.195.00',
     discount: '20%',
     cur_price: '7.295.00',
+    category: 'men',
   },
   {
      id:'36' ,
@@ -370,6 +412,7 @@ const shoes_data = [
     actual_price: ' 2.995.00',
     discount: '25%',
     cur_price: '2.105.00',
+    category: 'men',
   },
   {
     id: '37',
@@ -380,6 +423,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '10%',
     cur_price: '3.995.00',
+    category: 'women',
   },
   {
     id:'38',
@@ -390,6 +434,7 @@ const shoes_data = [
     actual_price: ' 5.195.00',
     discount: '20%',
     cur_price: '4.295.00',
+    category: 'women',
   },
   {
     id:'39',
@@ -400,6 +445,8 @@ const shoes_data = [
     actual_price: ' 2.995.00',
     discount: '5%',
     cur_price: '2.395.00',
+    category: 'kids',
+
   },
   {
     id: '40',
@@ -410,6 +457,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '15%',
     cur_price: '2.995.00',
+    category: 'kids',
   },
   {
     id: '41',
@@ -420,6 +468,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '10%',
     cur_price: '2.295.00',
+    category: 'kids',
   },
 
   {
@@ -431,6 +480,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '0%',
     cur_price: '3.195.00',
+    category: 'men',
   },
   {
     id: '43',
@@ -441,6 +491,7 @@ const shoes_data = [
     actual_price: ' 4.995.00',
     discount: '15%',
     cur_price: '3.295.00',
+    category: 'men',
   },
   {
     id: '44',
@@ -451,6 +502,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '40%',
     cur_price: '2.295.00',
+    category: 'men',
   },
   {
     id:'45' ,
@@ -461,6 +513,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '30%',
     cur_price: '2.995.00',
+    category: 'kids',
   },
   {
      id:'46' ,
@@ -471,6 +524,7 @@ const shoes_data = [
     actual_price: ' 7.195.00',
     discount: '25%',
     cur_price: '6.005.00',
+    category: 'men',
   },
   {
     id: '47',
@@ -481,6 +535,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '0%',
     cur_price: '2.195.00',
+    category: 'men',
   },
   {
     id: '48',
@@ -491,6 +546,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '2%',
     cur_price: '4.005.00',
+    category: 'men',
   },
   {
     id:'49' ,
@@ -501,6 +557,7 @@ const shoes_data = [
     actual_price: ' 7.105.00',
     discount: '12%',
     cur_price: '6.095.00',
+    category: 'kids',
   },
   {
     id:'50' ,
@@ -511,6 +568,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '15%',
     cur_price: '2.995.00',
+    category: 'kids',
   },
   {
     id: '51' ,
@@ -521,6 +579,7 @@ const shoes_data = [
     actual_price: ' 4.195.00',
     discount: '10%',
     cur_price: '3.995.00',
+    category: 'women',
   },
   {
     id:'52',
@@ -531,6 +590,7 @@ const shoes_data = [
     actual_price: ' 6.895.00',
     discount: '10%',
     cur_price: '6.003.00',
+    category: 'women',
   },
   {
     id: '53',
@@ -541,6 +601,7 @@ const shoes_data = [
     actual_price: ' 2.895.00',
     discount: '15%',
     cur_price: '1.975.00',
+    category: 'kids',
   },
   {
     id:'54' ,
@@ -551,6 +612,7 @@ const shoes_data = [
     actual_price: ' 3.195.00',
     discount: '10%',
     cur_price: '2.295.00',
+    category: 'women',
   },
   {
     id:'55' ,
@@ -561,6 +623,7 @@ const shoes_data = [
     actual_price: ' 6.999.00',
     discount: '15%',
     cur_price: '5.908.00',
+    category: 'men',
   },
   {
     id:'56' ,
@@ -571,6 +634,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '5%',
     cur_price: '1.995.00',
+    category: 'women',
   },
   {
     id:'57' ,
@@ -581,6 +645,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '0%',
     cur_price: '2.195.00',
+    category: 'kids',
   },
   {
     id: '58',
@@ -591,6 +656,7 @@ const shoes_data = [
     actual_price: ' 2.195.00',
     discount: '5%',
     cur_price: '1.995.00',
+    category: 'women',
   },
   {
     id:'59' ,
@@ -601,6 +667,7 @@ const shoes_data = [
     actual_price: ' 6.195.00',
     discount: '20%',
     cur_price: '5.295.00',
+    category: 'women',
   },
   {
     id: '60',
@@ -611,5 +678,6 @@ const shoes_data = [
     actual_price: ' 5.995.00',
     discount: '5%',
     cur_price: '5.115.00',
+    category: 'men',
   }
 ]
