@@ -497,6 +497,11 @@ display: none;
 
 .cart img{
   height: 45px;
+  max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+
 }
 .shoe-img img{
   height: 220px;
@@ -529,7 +534,7 @@ display: block;
 .side-page{
   max-width: 100%;
   width: 40%;
-  height: 1000px;
+  height: 800px;
 z-index: 1000;
 background-color: rgba(248, 218, 194, 0.454);
 position: fixed;
@@ -552,7 +557,7 @@ padding-top: 20%;
   margin:12%;
    position: relative;
   left:10%;
-  margin-top: 30%;
+  margin-top: 20%;
   max-width: 100%;
   width: 10%;
 background: none;
@@ -606,14 +611,24 @@ font-weight: 400;
   /* border-radius: 30px; */
 }
 .cart{
-  width: 100%;
+  width: 70%;
+  max-width: 100%;
+  height: 50px;
+  margin-top: 10px;
 }
+
 .wishlist{
-  width: 15%;
-  height:70px;
+  width: 14%;
+  height:50px;
+  margin-top: 10px;
 }
 .wishlist img{
   height: 35px;
+}
+.cart-items-count{
+left: 30px;
+top: 0px;
+
 }
 
 }
