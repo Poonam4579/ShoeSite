@@ -242,7 +242,7 @@ padding: 2%;
   
 }
 .all-data-div{
-  margin-left: 5%;
+  padding-left: 5%;
 }
 
 .shoe-name{
@@ -470,14 +470,15 @@ display: none;
 
 .heading-for-shoe{
   font-size: 1.4rem;
-  letter-spacing: 0.5rem;
-  text-align: center;
+  letter-spacing: 0.3rem;
+   text-align: center;
   max-width: 100%;
-  height: 50px;
-  width: 100%;
-  margin-top: 10%;
-  padding: 0px;
-}
+   /* height: 50px; */
+  /* width: 100%; */
+   margin: 0px;
+  padding: 0px;   
+
+} 
 .second-line{
   max-width: 100%;
   display: block;
@@ -537,7 +538,7 @@ display: block;
   width: 60%;
   height: 800px;
 z-index: 1000;
-background-color: rgba(203, 196, 191, 0.454);
+background-color: rgba(255, 251, 246, 0.865);
 position: fixed;
 margin-left: 40%;
 transform: translateX(200px);
@@ -552,7 +553,7 @@ visibility: visible;
 .for-gender-btns2{
 display: flex;
 flex-direction: column;
-padding-top: 30%;
+padding-top: 20%;
 }
 .about2{
   margin:12%;
@@ -564,7 +565,7 @@ padding-top: 30%;
 background: none;
 border: none;
 font-size: 1.2rem;
-font-weight: 700;
+font-weight: 500;
 
 }
 .about2 a{
@@ -585,7 +586,7 @@ font-weight: 700;
    position: relative;
   left:15%;
   max-width: 100%;
-  width: 15%;
+  width: 20%;
 background: none;
 border: none;
 font-size: 1rem;
@@ -638,7 +639,11 @@ top: 3px;
     max-width: 100%;
     height: 50px;
     text-align: center;
-    margin-top: 50%;
+    margin-top: 40%;
+}
+.heading-for-shoe-dis{
+   font-size: 1rem;
+ 
 }
 
 }
