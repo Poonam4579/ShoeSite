@@ -1,5 +1,11 @@
 
+ let saved_count = localStorage.getItem("shoeID's");
+
+total_count = saved_count ? JSON.parse(saved_count) : [];
+  
 gender_category();
+update_count();
+
  heart_function();
   hamburger_function_load();
   cart_trolly();

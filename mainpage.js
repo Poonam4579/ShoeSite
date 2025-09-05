@@ -1,8 +1,17 @@
-let total_count = [];
+let total_count;
 on_load();
 
+
+
 function on_load() {
- container_of_shoe_function(shoes_data);
+  
+  let saved_count = localStorage.getItem("shoeID's");
+
+  total_count = saved_count ? JSON.parse(saved_count) : [];
+
+  container_of_shoe_function(shoes_data);
+  update_count();
+
   heart_function();
   hamburger_function_load();
   cart_trolly();
@@ -42,7 +51,6 @@ function container_of_shoe_function(shoe_products) {
 </div>`
   });
 };
- 
 
 
 //HEART BUTTON
@@ -89,15 +97,15 @@ function local_shoe_store(shoeID) {
   total_count.push(shoeID);
   localStorage.setItem("shoeID's", JSON.stringify(total_count));
   console.log(total_count);
-  
+
+  update_count();
 };
 
 
 //ADD CART COUNT ON DISPLAY
 
 function cart_trolly() {
-  let cart_count = document.querySelector('.cart-items-count');
-  let cart_button = document.querySelector('.in-container-cart-btn');
+  // let cart_button = document.querySelector('.in-container-cart-btn');
   let for_container = document.querySelector('#section2 .container');
 
   for_container.addEventListener("click", (e) => {
@@ -109,21 +117,25 @@ function cart_trolly() {
 
       local_shoe_store(cart2);
 
-        // cart_count.innerText = local_shoe_store(`${shoes_data.id}`);
-    
-      if (total_count.length > 0) {
-        cart_count.style.display = "block";
-        cart_count.innerText = total_count.length;
-      }
-      else {
-        cart_count.style.display = "none";
-      };
+      // cart_count.innerText = local_shoe_store(`${shoes_data.id}`);
+     
     };
   });
 };
 
 
-
+  function update_count() {
+      
+        let cart_count = document.querySelector('.cart-items-count');
+        
+        if (total_count.length > 0) {
+          cart_count.style.display = "block";
+          cart_count.innerText = total_count.length;
+        }
+    else {
+          cart_count.style.display = "none";
+        };
+};
 
 
 
