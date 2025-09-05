@@ -50,8 +50,10 @@ text-align: center;
 margin: 0px;
 padding: 5px;
 }
+
 .remove-btn{
  margin-top: 5%;
+ margin-left: 50%;
   max-width: 100%;
   width: 40%;
   height: 25px;
@@ -62,6 +64,7 @@ font-weight: 500;
 border-radius: 5px;
  font-family: "Titillium Web", sans-serif;
  font-size: 0.9rem;
+ 
 }
 .remove-btn:hover{
   box-shadow: 1px 1px 1px grey;
@@ -83,9 +86,9 @@ font-weight: 700;
 .C-price{
 text-decoration: line-through;
 }
-.discount{
+/* .discount{
 
-}
+} */
 .with-discount-price{
   color: rgb(16, 79, 16);
   font-size: 1.3rem;
@@ -158,4 +161,36 @@ box-shadow: none;
   height: 1px;
   background-color: rgb(151, 151, 151);
   margin-top: 5%;
+}
+/* RESPONSIVE THING */
+@media (max-width: 480px){
+#section2-cart-data{
+  flex-direction: column;
+  margin-top: 20%;
+ 
+}
+.shoe-cart-data{
+  width: 100%;
+   /* text-align: center; */
+  
+}
+.ammount-container{
+  width: 100%;
+  /* margin-left: 5%; */
+}
+.item1{
+padding-left: 10%;
+}
+.total{
+  padding-left: 10%;
+}
+.sumary{
+  text-align: center;
+}
+.shoe-cart-img img{
+  min-height: 200px;
+}
+.shoe-cart-img{
+  width: 50%;
+}
 }
