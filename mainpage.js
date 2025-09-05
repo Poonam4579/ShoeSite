@@ -1,6 +1,6 @@
 let total_count;
-on_load();
 
+on_load();
 
 
 function on_load() {
@@ -136,6 +136,7 @@ function cart_trolly() {
           cart_count.style.display = "none";
         };
 };
+
 
 
 

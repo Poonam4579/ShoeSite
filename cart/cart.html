@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kids Section</title>
-  <link rel="stylesheet" href="mainpage.css">
+  <link rel="stylesheet" href="../mainpage.css">
   <link rel="stylesheet" href="cart.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <header id="section1">
     <div class="first-line">
       <div class="logo-img">
-      <img src="shoe_images\2-removebg-preview.png" alt="shoelogo"></div>
+      <img src="/shoe_images\2-removebg-preview.png" alt="shoelogo"></div>
       <h1 class="page-heading">Borecelle Shoes</h1>
 
       <!-- ADD HAMBURGER HERE -->
@@ -46,34 +46,44 @@
         <p class="tools"><a href="#">More</a></p>
         <input type="text" placeholder="Search" id="Search-bar">
         <button class="search-btn">
-          <img src="shoe_images\search-icon-2-614x460.png" alt="search-btn">
+          <img src="/shoe_images\search-icon-2-614x460.png" alt="search-btn">
         </button>
       </div>
     </div>
     <!-- Second Line -->
-    <div class="second-line">
-      <div class="for-gender-btns">
-         <button class="about" data-gender="all"><a href="index.html">All</a></button>
-      <button class="about" data-gender="men"><a href="men.html">Men</a></button>
-      <button class="about" data-gender="women"><a href="women.html">Women</a></button>
-      <button class="about" data-gender="kids"><a href="kids.html">Kids</a></button>
-      <button class="about" data-gender="offers"><a href="offers.html">Offers</a></button>
-      </div>
-      <div class="for-wishlist-cart-btn">
-        <button class="wishlist filling">
-          <img src="shoe_images\360_F_1562810911_m1Dv0d3PKkiMlCGLWakKLkfVnqhhRuOk-removebg-preview.png" alt="heart">
-        </button>
-        <div class="cart-filling-count">
-        <button class="cart filling">
-          <p class="cart-items-count">0</p>
-          <img src="shoe_images\images__6_-removebg-preview.png" alt="trolly">
-        </button>
-        </div>
-      </div>
-    </div>
+   
   
   </header>
+<div id="section2-cart-data">
+  <div class="shoe-cart-data">
 
+    <!-- <div class="shoe-cart-img">
+    <img src="/shoe_images\7_823bce61-02ed-4032-8d10-5ea93ea2fff2.webp" alt="cart-shoe-img">
+    </div>
+    <div class="about-cart-shoe">
+      <p class="in-cart name"></p>
+      <p class="in-cart brand"> </p>
+      <p class="in-cart C-price"></p>
+      <p class="in-cart discount"></p>
+      <p class="in-cart with-discount-price"></p>
+      <button class="remove-btn"> </button>
+    </div> -->
+    
+</div>
+    <!-- AMMOUNT -->
+     <div class="ammount-container">
+     <h3 class="sumary">Summary</h3>
+     <div class="ammout">
+
+      <p class="item1" > item1: </p> <p class="Cprice"> $ 9023</p>
+      <p class="item1" > item2: </p> <p class="Cprice"> $ 3029</p>
+      <div class="line"></div>
+      <p class="total">Total amount :</p> <p class="Cprice">$ 12,900</p>
+     </div>
+     <button class="buy-now">Buy Now</button>
+  </div>
+  </div>
+</div>
 
   <footer id="section3">
   <div class="resources">
@@ -111,8 +121,8 @@
   </div>
 </footer>
 
-  <script src="mainpage.js"></script>
-  <script src="shoedata.js"></script>
-  <script src="kids.js"></script>
+  <script src="../mainpage.js"></script>
+  <script src="../shoedata.js"></script>
+  <script src="cart.js"></script>
 </body>
 </html>

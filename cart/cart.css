@@ -1,0 +1,161 @@
+#section2-cart-data{
+display: flex;
+flex-direction: row;
+max-width: 100%;
+/* height: 1000px;  NO NEED OF FIXED HEIGHT */ 
+justify-content: center;
+text-align: center;
+  margin-top: 10%;
+}
+.shoe-cart-data{
+  max-width: 100%;
+  width: 60%;
+  min-height: 230px; /* IT HELPS TO FROM OVERFLOW OF ITEM CONTAINERS*/
+  height: auto;
+ 
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  
+ 
+}
+.for-flex{
+  max-width: 100%;
+ display: flex;
+  flex-direction: row;
+  margin-bottom: 5% ;
+}
+
+.shoe-cart-img{
+  max-width: 100%;
+  width: 40%;
+  text-align: start;
+
+}
+.shoe-cart-img img{
+ height: auto;
+ min-height: 240px;
+ max-width: 100%;
+ 
+ 
+}
+.about-cart-shoe{
+  max-width: 100%;
+  width: 100%;
+  text-align: start;
+ margin-left: 2%;
+ padding-top: 2%;
+}
+.in-cart{
+margin: 0px;
+padding: 5px;
+}
+.remove-btn{
+ margin-top: 5%;
+  max-width: 100%;
+  width: 40%;
+  height: 25px;
+  border: none;
+  background-color: rgb(241, 39, 39);
+  color: white;
+font-weight: 500;
+border-radius: 5px;
+ font-family: "Titillium Web", sans-serif;
+ font-size: 0.9rem;
+}
+.remove-btn:hover{
+  box-shadow: 1px 1px 1px grey;
+  background-color: rgb(238, 72, 72);
+}
+.remove-btn:active{
+background-color:rgb(241, 39, 39) ;
+box-shadow: none;
+}
+
+.name{
+font-size: 1.2rem;
+}
+.brand{
+font-size: 1.3rem;
+color: rgb(83, 82, 82);
+font-weight: 700;
+}
+.C-price{
+text-decoration: line-through;
+}
+.discount{
+
+}
+.with-discount-price{
+  color: rgb(16, 79, 16);
+  font-size: 1.3rem;
+font-weight: 500;
+}
+.ammount-container{
+   width: 30%;
+  max-width: 100%;
+  min-height: 260px;
+  height:auto;
+
+}
+.ammout{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-auto-rows: 40px;
+
+}
+.sumary{
+
+font-size: 2rem;
+text-align: left;
+ font-family: "Titillium Web", sans-serif;
+ margin: 4%;
+ color: rgb(76, 35, 32);
+}
+.Cprice{
+margin: 0px;
+padding: 0px;
+
+}
+.item1{
+margin: 0px;
+padding: 0px;
+text-align: left;
+padding-left: 10px;
+}
+.item2{
+margin: 0px;
+padding: 0px;
+text-align: left;
+padding-left: 10px;
+}
+.total{
+margin: 0px;
+padding: 0px;
+text-align: left;
+padding-left: 10px;
+}
+.buy-now{
+width: 60%;
+height: 35px;
+background-color: rgb(118, 186, 51);
+border: none;
+border-radius: 20px;
+font-size: 1.1rem;
+color: white;
+}
+.buy-now:hover{
+  box-shadow: 1px 1px 1px grey;
+  background-color: rgb(118, 199, 59);
+}
+.buy-now:active{
+background-color:rgb(118, 186, 51 );
+box-shadow: none;
+}
+.line{
+  grid-column: 1 / -1;
+  max-width: 100%;
+  height: 1px;
+  background-color: rgb(151, 151, 151);
+  margin-top: 5%;
+}
