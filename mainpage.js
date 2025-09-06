@@ -15,7 +15,7 @@ function on_load() {
   heart_function();
   hamburger_function_load();
   cart_trolly();
-  
+ 
 };
 
 
