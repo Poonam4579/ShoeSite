@@ -1,7 +1,7 @@
 
 map_shoe_data();
 cart_shoe_data();
-remove();
+// remove();
 
 //MAP FUNCTION TO ACCESS ALL THE DATA FROM SELECTED ID THAT ARE IN CART (total_count)
 function map_shoe_data() {
@@ -22,12 +22,13 @@ function cart_shoe_data() {
   let element_cart_data = document.querySelector('.shoe-cart-data');
 
   let mapped_items = map_shoe_data();
-  let innerHTML = '';
+  let innerHTML2 = '';
   mapped_items.forEach(count => {
-    innerHTML += selected_shoe_items(count);
+    innerHTML2 += selected_shoe_items(count);
   });
-  element_cart_data.innerHTML = innerHTML;
+  element_cart_data.innerHTML = innerHTML2;
   remove();
+
 };
 
 //REMOVE BUTTON
@@ -40,15 +41,22 @@ function remove() {
 
       let clicked = Rbtn.dataset.id;
 
-     Rbtn.closest('.for-flex').remove();
+      Rbtn.closest('.for-flex').remove();
 
       //UPDATE ARRAY ID
-      total_count = total_count.filter(Uarray =>  Uarray !== clicked )
-      cart_shoe_data();
+  
+      total_count = total_count.filter(Uarray => Uarray !== clicked)
+      localStorage.setItem("shoeID's", JSON.stringify(total_count));
 
+       // FOR REMOVED ITEMS
+      
+      cart_shoe_data();
+     
+     
     });
   });
 };
+
 
     // all the shoe_data items
 function selected_shoe_items(selected_shoes) {
@@ -62,7 +70,7 @@ function selected_shoe_items(selected_shoes) {
       <p class="in-cart C-price">${selected_shoes.actual_price}</p>
       <p class="in-cart discount">${selected_shoes.discount}</p>
       <p class="in-cart with-discount-price">${selected_shoes.cur_price}</p>
-      <button class="remove-btn" data-id = ${selected_shoes.id}> Remove</button>
+      <button class="remove-btn" data-id = "${selected_shoes.id}"> Remove</button>
        <div class="line"></div>
     </div>
     </div>`

@@ -4,17 +4,21 @@ on_load();
 
 
 function on_load() {
-  
+  // FOR ADDED ITEMS
   let saved_count = localStorage.getItem("shoeID's");
-
   total_count = saved_count ? JSON.parse(saved_count) : [];
 
+  let saved_count2 = localStorage.getItem("shoeID's");
+
+  total_count = saved_count2 ? JSON.parse(saved_count2) : [];
+  
   container_of_shoe_function(shoes_data);
   update_count();
 
   heart_function();
   hamburger_function_load();
   cart_trolly();
+  
  
 };
 
@@ -134,7 +138,8 @@ function cart_trolly() {
         }
     else {
           cart_count.style.display = "none";
-        };
+    };
+    
 };
 
 
