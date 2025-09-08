@@ -22,11 +22,11 @@ function cart_shoe_data() {
   let element_cart_data = document.querySelector('.shoe-cart-data');
 
   let mapped_items = map_shoe_data();
-  let innerHTML2 = '';
+  let innerHTML = '';
   mapped_items.forEach(count => {
-    innerHTML2 += selected_shoe_items(count);
+    innerHTML += selected_shoe_items(count);
   });
-  element_cart_data.innerHTML = innerHTML2;
+  element_cart_data.innerHTML = innerHTML;
   remove();
 
 };

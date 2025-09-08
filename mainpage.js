@@ -1,4 +1,5 @@
 let total_count;
+let wishlist_count;
 
 on_load();
 
@@ -7,18 +8,19 @@ function on_load() {
   // FOR ADDED ITEMS
   let saved_count = localStorage.getItem("shoeID's");
   total_count = saved_count ? JSON.parse(saved_count) : [];
-
+//FOR REMOVED ITEMS
   let saved_count2 = localStorage.getItem("shoeID's");
-
   total_count = saved_count2 ? JSON.parse(saved_count2) : [];
-  
+  //FOR HEART ITEMS
+  let saved_heart_count = localStorage.getItem("storage_heart");
+  wishlist_count = saved_heart_count ? JSON.parse(saved_heart_count) : [];
+
+
   container_of_shoe_function(shoes_data);
   update_count();
-
   heart_function();
   hamburger_function_load();
   cart_trolly();
-  
  
 };
 
@@ -44,10 +46,10 @@ function container_of_shoe_function(shoe_products) {
     <p class="current-price">${shoe.cur_price}</p>
 </span>
 <span class="add_btns">
-<button class= "in-container-cart-btn" data-id = ${shoe.id}>Add to Cart</button>
+<button class= "in-container-cart-btn" data-id = "${shoe.id}">Add to Cart</button>
 <div class= "shoe">
-<button class= "in-container-wishlist-btn"> </button>
-<button class= "in-container-red-heart-btn"></button>
+<button class= "in-container-wishlist-btn" data-id = "${shoe.id}"></button>
+<button class= "in-container-red-heart-btn" data-id = "${shoe.id}"></button>
 
 </div>
  </span>
@@ -55,6 +57,21 @@ function container_of_shoe_function(shoe_products) {
 </div>`
   });
 };
+
+
+//LOCAL STORAGE FOR WISHLIST
+function add_in_wishlist(wishlist_id) {
+   wishlist_count.push(wishlist_id);
+  localStorage.setItem("storage_heart", JSON.stringify(wishlist_count));
+  console.log(wishlist_count);
+   
+}
+//REMOVE FORM LOCAL STORAGE 
+function remove_from_wishlist(wishlist_id) {
+  wishlist_count = wishlist_count.filter(item => item !== wishlist_id);
+  localStorage.setItem("storage_heart", JSON.stringify(wishlist_count));
+  console.log(wishlist_count);
+}
 
 
 //HEART BUTTON
@@ -66,15 +83,28 @@ function heart_function() {
     let white_heart_btn = product.querySelector('.in-container-wishlist-btn');
     let red_heart_btn = product.querySelector('.in-container-red-heart-btn');
     if (!white_heart_btn || !red_heart_btn) return;
-  
+
+    let for_id = red_heart_btn.dataset.id;
+
+    if (wishlist_count.includes(for_id)) {
+      white_heart_btn.style.display = "none";
+      red_heart_btn.style.display = "block";
+    }
+    else {
+      white_heart_btn.style.display = "block";
+      red_heart_btn.style.display = "none";
+    };
+
     white_heart_btn.addEventListener("click", () => {
       white_heart_btn.style.display = "none";
-      red_heart_btn.style.display = "block"
+      red_heart_btn.style.display = "block";
+      add_in_wishlist(for_id);
     });
 
     red_heart_btn.addEventListener("click", () => {
       white_heart_btn.style.display = "block";
       red_heart_btn.style.display = "none";
+      remove_from_wishlist(for_id);
     });
   });
   

@@ -342,13 +342,10 @@ border: none;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  display: block;
   /* position: relative;  */
-  
 }
-/* .in-container-wishlist-btn:hover{
- box-shadow: 2px 2px 2px rgb(176, 175, 175);
 
-} */
 .in-container-red-heart-btn{
    max-width: 100%;
  /* margin: 5px; */
@@ -367,9 +364,6 @@ border: none;
   border:none;
   display: none;
 }
-/* .in-container-red-heart-btn.red-btn{
-  display: block;
-} */
 
 
 #section3{
