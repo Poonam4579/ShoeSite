@@ -46,7 +46,7 @@ function container_of_shoe_function(shoe_products) {
     <p class="current-price">${shoe.cur_price}</p>
 </span>
 <span class="add_btns">
-<button class= "in-container-cart-btn" data-id = "${shoe.id}">Add to Cart</button>
+<button class= "in-container-cart-btn" data-id ="${shoe.id}">Add to Cart</button>
 <div class= "shoe">
 <button class= "in-container-wishlist-btn" data-id = "${shoe.id}"></button>
 <button class= "in-container-red-heart-btn" data-id = "${shoe.id}"></button>
@@ -146,13 +146,8 @@ function cart_trolly() {
     if (e.target.classList.contains("in-container-cart-btn")) {
       //THAT e TARGERTS THE CLASS THAT CONTAINS THAT CART BUTTON (MEANS THE CLASS OF CART BUTTON), SO WHENEVER THE BUTTONS CLICKED THE COUNT WILL ADDED
       
-     
       let cart2 = e.target.dataset.id;
-
       local_shoe_store(cart2);
-
-      // cart_count.innerText = local_shoe_store(`${shoes_data.id}`);
-     
     };
   });
 };
