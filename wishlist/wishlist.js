@@ -27,7 +27,7 @@ function wishlist_shoe_data() {
   });
   element_wishlist_data.innerHTML = innerHTML;
   remove2();
-
+  from_wish_to_cart();
 };
 
 //REMOVE BUTTON
@@ -46,6 +46,26 @@ function remove2() {
 };
 
 //ADD TO CART BUTTON
+function from_wish_to_cart(){
+let element_cart_btn = document.querySelectorAll('.w-add-to-cart ');
+
+  element_cart_btn.forEach(c_btn => {
+
+    let for_cart_id = c_btn.dataset.id;
+
+    c_btn.addEventListener("click", () => {
+      c_btn.closest('.box1').remove();
+
+      wishlist_count = wishlist_count.filter(item => item !== for_cart_id);
+      localStorage.setItem("storage_heart", JSON.stringify(wishlist_count));
+      console.log(wishlist_count);
+    
+      total_count.push(for_cart_id);
+      localStorage.setItem("shoeID's", JSON.stringify(total_count));
+      
+    });
+  });
+};
 
 
     // all the shoe_data items
@@ -60,10 +80,10 @@ function selected_wishlist_items(selected_shoes2) {
       <p class="w-c-price">${selected_shoes2.cur_price}</p>
     </span>
     <div class="for-cart">
-    <button class="w-add-to-cart data-id ="${selected_shoes2.id}">Add to Cart +</button>
+    <button class="w-add-to-cart" data-id ="${selected_shoes2.id}">Add to Cart +</button>
     </div>
-
   </div>
   `
 }
+
 

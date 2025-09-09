@@ -25,6 +25,7 @@ function cart_shoe_data() {
   let innerHTML = '';
   mapped_items.forEach(count => {
     innerHTML += selected_shoe_items(count);
+    
   });
   element_cart_data.innerHTML = innerHTML;
   remove();

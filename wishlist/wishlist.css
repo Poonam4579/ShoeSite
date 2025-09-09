@@ -18,7 +18,7 @@ grid-template-columns: repeat(3, 1fr);
 
 }
 .box1{
-  border: 1px solid rgb(218, 217, 215);
+  /* border: 1px solid rgb(218, 217, 215); */
   padding: 2%;
   margin: 2%;
   max-width: 100%;
@@ -105,9 +105,8 @@ height: 250px;
 }
 .for-price{
 font-size: 0.9rem;
-
 }
 .w-add-to-cart{
-font-size: 0.8rem;
+font-size: 0.7rem;
 }
 }
