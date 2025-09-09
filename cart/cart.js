@@ -1,6 +1,7 @@
 
 map_shoe_data();
 cart_shoe_data();
+for_amount();
 // remove();
 
 //MAP FUNCTION TO ACCESS ALL THE DATA FROM SELECTED ID THAT ARE IN CART (total_count)
@@ -23,14 +24,42 @@ function cart_shoe_data() {
 
   let mapped_items = map_shoe_data();
   let innerHTML = '';
+ 
   mapped_items.forEach(count => {
     innerHTML += selected_shoe_items(count);
     
   });
   element_cart_data.innerHTML = innerHTML;
   remove();
-
+  
 };
+//FOR SLECTED ITEMS AMOUNT
+function for_amount() {
+  let element_amount_data = document.querySelector('.ammout');
+  
+  let mapped_items = map_shoe_data();
+  
+  let total = 0;
+  let amount_html = '';
+  mapped_items.forEach(price => {
+    amount_html += `
+
+      <p class="item1" > ${price.name} </p> <p class="Cprice">₹${price. cur_price}</p>
+      `;
+    
+    let convert = parseInt(price.actual_price.replace(/[₹$,]/g, ''));
+    total += convert;
+  });
+  amount_html += `
+  <div class="line"></div>
+      <p class="total">Total amount :</p> <p class="Cprice">₹${total}.00</p>
+
+  `;
+    
+ 
+  element_amount_data.innerHTML = amount_html;
+};
+
 
 //REMOVE BUTTON
 function remove() {
@@ -76,4 +105,5 @@ function selected_shoe_items(selected_shoes) {
     </div>
     </div>`
 }
+
 
