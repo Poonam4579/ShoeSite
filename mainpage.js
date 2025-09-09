@@ -86,7 +86,7 @@ function heart_function() {
 
     let for_id = red_heart_btn.dataset.id;
 
-    if (wishlist_count.includes(for_id)) {
+    if (wishlist_count.includes(for_id) ) {
       white_heart_btn.style.display = "none";
       red_heart_btn.style.display = "block";
     }
