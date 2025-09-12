@@ -46,10 +46,10 @@ function for_amount() {
 
       <p class="item1" > ${price.name} </p> <p class="Cprice">₹${price. cur_price}</p>
       `;
-    
     let convert = parseInt(price.actual_price.replace(/[₹$,]/g, ''));
     total += convert;
   });
+  
   amount_html += `
   <div class="line"></div>
       <p class="total">Total amount :</p> <p class="Cprice">₹${total}.00</p>
